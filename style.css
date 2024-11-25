@@ -9,6 +9,7 @@ h1 {
 ul {
     list-style-type: none;
     max-width: 300px;
+    margin: 0;
 }
 
 li {
