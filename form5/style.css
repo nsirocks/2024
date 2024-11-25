@@ -1,7 +1,6 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url("https://mail.google.com/mail/u/0?ui=2&ik=c22033d3cb&attid=0.1&permmsgid=msg-f:1812985375239540456&th=19290497da218ee8&view=fimg&fur=ip&sz=s0-l75-ft&attbid=ANGjdJ8oruknnUIduwHbtQh1DBu5v33WrH6SswYLHbY19UWrgyzWmo_nthlmxsAmCy_RczKJWukvDpzdiTUfxkpky3-C8muZ4OlQW5JLqGfEh3CgzESx6MLekb-SoGE&disp=emb&realattid=4EEAC044-5B94-42E2-A790-1BCEFE2EDA81");
     font-family: "Roboto", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
   text-align: center
 }
@@ -10,14 +9,11 @@ main {
     width: 90%px;
     margin: 1rem auto;
     padding: 0 3rem;
-     background-image: url("https://mail.google.com/mail/u/0?ui=2&ik=c22033d3cb&attid=0.1&permmsgid=msg-f:1812985375239540456&th=19290497da218ee8&view=fimg&fur=ip&sz=s0-l75-ft&attbid=ANGjdJ8oruknnUIduwHbtQh1DBu5v33WrH6SswYLHbY19UWrgyzWmo_nthlmxsAmCy_RczKJWukvDpzdiTUfxkpky3-C8muZ4OlQW5JLqGfEh3CgzESx6MLekb-SoGE&disp=emb&realattid=4EEAC044-5B94-42E2-A790-1BCEFE2EDA81")
     min-height: 400px; 
-  color: white
 }
 
 h1 {
     text-align: center;
-  color: white
 }
 
 input {
@@ -34,9 +30,6 @@ div {
   display: flex;
 justify-content: center;
 }
- p {
-   color: white
- }
 
 button {
  border-radius: 15px;
