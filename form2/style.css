@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+    font-family: "Roboto", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+  background-size: 10 %;
+  background-image: url('https://www.publicdomainpictures.net/pictures/160000/velka/american-flag-1459201553ppe.jpg');
+  
+
+ 
+}
+
+main {
+    width: 90%px;
+    margin: 1rem auto;
+    padding: 0 3rem;
+    background-color: ;
+    border: 1px solid black;
+    min-height: 400px;
+}
+
+h1 {
+    text-align: center;
+}
+
+form > * {
+    display: block;
+    margin: 1rem;
+}
+
+.style{
+    color: darkgoldenrod ; 
+  font-family: optimizeSpeed  ;
+  font-size: 22px; 
+  text-align :  ;
+  text-decoration :    ;
+  border : ;
+  border-radius: ;
+  text-shadow: 1px 1px 1px black, 0 0 1em ;
+}
+
+.titre{
+  color: blanchedalmond; 
+  font-family: serif ;
+  font-size: 30px; 
+  text-align : center ;
+  text-decoration :       ;
+  border : 1px ;
+  border-radius: 2px ;
+  text-shadow: 1px 1px 10px black, 0 0 1em ;
+  
+}
+
+.glasso {
+  margin: 0px;
+  background-color: rgba(255,255,255,0.6);
+  padding: 30px;
+  border-radius: 20px;
+  border: 3px solid rgba(255,255,255,0.4);
+  backdrop-filter: blur(2px);
+  box-shadow:  30px -13px 46px 68px rgba(0,0,0,0.1);
+   background-image: url('');
+  background-size: 92%;
+
+.soustitre{
+  color: black ; 
+  font-family: serif ;
+  font-size: 20px; 
+  text-align : center ;
+  text-decoration :       ;
+  border : 3px ;
+  border-radius: 2px ;
+
+  
+}
+ 
+ 

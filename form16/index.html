@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Titre de la page</title>
+</head>
+<body>
+  <main>
+    <h1>Sondage sur votre vie</h1>
+    <form action="https://nsi.rocks/api/cours/missioncleopatre" method="post">
+      <input type="hidden" name="api" value="nsi-2024" />
+<label> Nom 
+ <input name="nom" autocomplete="name" required = "true" >
+      </label>
+        <br>
+      <label>Prenom 
+          <input name="prenom" autocomplete="name"  required = "true" >
+      </label>
+      <label> 1) Avez vous un toit pout vivre ?
+        <p></p>
+        <input type="radio" id='maison' name="maison" value ="oui"/>
+        <label for='maison'>Oui</label>
+         <p></p>
+        <input type="radio" id='maison' name="maison" value = "non"/>
+        <label for='maison'>Non</label>
+         <p></p>
+        <label> 2) Penser vous être dans une bonne ou une mauvaise situtation ?
+          <p></p>
+        <input type="radio" id='heureux' name="heureux" value = "bonne"/>
+        <label for='heureux'>Bonne</label>
+        <p></p>
+        <input type="radio" id='heureux' name="heureux" value ="mauvaise" />
+        <label for='heureux'>Mauvaise</label>
+        <p></p>
+          <input type="radio" id='heureux' name="heureux" value="Vous savez, moi je ne crois pas qu’il y ait de bonne ou de mauvaise situation. Moi, si je devais résumer ma vie aujourd’hui avec vous, je dirais que c’est d’abord des rencontres. Des gens qui m’ont tendu la main, peut-être à un moment où je ne pouvais pas, où j’étais seul chez moi. Et c’est assez curieux de se dire que les hasards, les rencontres forgent une destinée… Parce que quand on a le goût de la chose, quand on a le goût de la chose bien faite, le beau geste, parfois on ne trouve pas l’interlocuteur en face je dirais, le miroir qui vous aide à avancer. Alors ça n’est pas mon cas, comme je disais là, puisque moi au contraire, j’ai pu : et je dis merci à la vie, je lui dis merci, je chante la vie, je danse la vie… je ne suis qu’amour ! Et finalement, quand beaucoup de gens aujourd’hui me disent « Mais comment fais-tu pour avoir cette humanité ? », et bien je leur réponds très simplement, je leur dis que c’est ce goût de l’amour ce goût donc qui m’a poussé aujourd’hui à entreprendre une construction mécanique, mais demain qui sait ? Peut-être simplement à me mettre au service de la communauté, à faire le don, le don de soi…"/>
+        <label for='heureux'> Vous savez, moi je ne crois pas qu’il y ait de bonne ou de mauvaise situation. Moi, si je devais résumer ma vie aujourd’hui avec vous, je dirais que c’est d’abord des rencontres. Des gens qui m’ont tendu la main, peut-être à un moment où je ne pouvais pas, où j’étais seul chez moi. Et c’est assez curieux de se dire que les hasards, les rencontres forgent une destinée… Parce que quand on a le goût de la chose, quand on a le goût de la chose bien faite, le beau geste, parfois on ne trouve pas l’interlocuteur en face je dirais, le miroir qui vous aide à avancer. Alors ça n’est pas mon cas, comme je disais là, puisque moi au contraire, j’ai pu : et je dis merci à la vie, je lui dis merci, je chante la vie, je danse la vie… je ne suis qu’amour ! Et finalement, quand beaucoup de gens aujourd’hui me disent « Mais comment fais-tu pour avoir cette humanité ? », et bien je leur réponds très simplement, je leur dis que c’est ce goût de l’amour ce goût donc qui m’a poussé aujourd’hui à entreprendre une construction mécanique, mais demain qui sait ? Peut-être simplement à me mettre au service de la communauté, à faire le don, le don de soi…</label>
+        <p></p>
+        <label> 3) Avez vous des amis ?
+          <p></p>
+         <p></p>
+        <input type="radio" id='amis' name="amis" value="oui"/>
+        <label for='amis'>Oui</label>
+        <p></p>
+        <input type="radio" id='amis' name="amis" value="non"/>
+        <label for='amis'>Non</label>
+        <p></p>
+        <label> 4) Si oui, sont-ils des chacals ?
+          <p></p>
+         <p></p>
+        <input type="radio" id='chacal' name="chacal" value="oui"/>
+        <label for='chacal'>Oui</label>
+        <p></p>
+        <input type="radio" id='chacal' name="chacal" value="non"/>
+        <label for='chacal'>Non</label>
+        <p></p>
+        <input type="radio" id='chacal' name="chacal" value="quoi on dit des chacaux"/>
+        <label for='chacal'>Quoi, on dit des "chacaux" ?</label>
+        <p></p
+         <label> 5) Si oui, connais tu un Pierre ?
+          <p></p>
+         <p></p>
+        <input type="radio" id='pierre' name="pierre" value="oui"/>
+        <label for='pierre'>Oui</label>
+        <p></p>
+        <input type="radio" id='pierre' name="pierre" value="non" />
+        <label for='pierre'>Non</label>
+        <p></p>
+        <input type="radio" id='pierre' name="pierre" value="Pas de pierre : pas de construction. Pas de construction : pas de palais. Pas de palais... pas de palais"/>
+        <label for='pierre'>Pas de pierre : pas de construction. Pas de construction : pas de palais. Pas de palais... pas de palais.</label>
+        <p></p>
+        <label> 6) Aimes tu les travaux de groupe ?
+          <p></p>
+         <p></p>
+        <input type="radio" id='travaux' name="travaux" value="oui" value="oui"/>
+        <label for='travaux'>Oui</label>
+        <p></p>
+        <input type="radio" id='travaux' name="travaux" value="le lioon ne s'associe pas avec le cafard"/>
+        <label for='travaux'>Non, Le lion ne s'associe pas avec le cafard</label>
+        <p></p>
+          <label> 7) Comment te sens tu  ?
+          <p></p>
+         <p></p>
+        <input type="radio" id='commentcava' name="commentcava" value="ca va"/>
+        <label for='commentcava'>Ca va </label>
+        <p></p>
+        <input type="radio" id='commentcava' name="commentcava" value="ca va pas"/>
+        <label for='commentcava'>Ca va pas</label>
+        <p></p>
+        <input type="radio" id='commentcava' name="commentcava" value="ca va ca va imotep"/>
+        <label for='commentcava'>Ca va ca va imotep </label>
+        <p></p>
+            <label> 8) Connais tu ce film, dont toutes les references sont tirés ?
+          <p></p>
+        <input type="radio" id='film' name="film" value="oui"/>
+        <label for='film'>oui</label>
+        <p></p>
+        <input type="radio" id='film' name="film"  value="non (COMMENT CA !!!! QUITTE CE SONDAGE ET RATTRAPE LE TEMPS PERDU!!)"/>
+        <label for='film'>non (COMMENT CA !!!! QUITTE CE SONDAGE ET RATTRAPE LE TEMPS PERDU!!) </label>
+        <p></p>
+      
+          <button> 
+      <a href="pagedefin.html" type="submit" > Envoyer </a>
+              </button>
+
+
+
+    </form>
+  </main>
+</body>
+</html>

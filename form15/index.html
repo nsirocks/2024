@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Titre de la page</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choix de spécialités</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        main {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        label {
+            width: 100%;
+            margin-bottom: 10px;
+            font-weight: bold;
+            text-align: left;
+        }
+
+        select {
+            width: 80%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            transition: border-color 0.3s;
+        }
+
+        select:focus {
+            border-color: #007bff;
+            outline: none;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 80%;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Quelles seront vos spécialités l'année prochaine ?</h1>
+<form method="post" action="https://nsi.rocks/api/cours/form-spe" />
+          <input name="api" type="hidden" value="nsi-2024" />
+            <label>Nom
+                <input name="sub-nom" autocomplete="name" required>
+            </label>
+                
+            <label>Prénom 
+                <input name="sub-prenom" autocomplete="name" required>
+            </label>
+
+                      <label>Classe 
+                <input name="sub-classe" autocomplete="name" required>
+            </label>
+          
+            <label>Spé 1
+                <select name="sub-spé1" required>
+                    <option value="">Choisissez une spécialité</option>
+                    <option value="nsi">NSI</option>
+                    <option value="maths">Mathématiques</option>
+                    <option value="ses">SES</option>
+                    <option value="physique">Physique</option>
+                    <option value="hggsp">HGGSP</option>
+                    <option value="hlp">HLP</option>
+                    <option value="amc">AMC</option>
+                    <option value="llce">LLCE</option>
+                    <option value="svt">SVT</option>
+                </select>
+            </label>
+
+            <label>Spé 2 
+                <select name="sub-spé2" required>
+                    <option value="">Choisissez une spécialité</option>
+                    <option value="nsi">NSI</option>
+                    <option value="maths">Mathématiques</option>
+                    <option value="ses">SES</option>
+                    <option value="physique">Physique</option>
+                    <option value="hggsp">HGGSP</option>
+                    <option value="hlp">HLP</option>
+                    <option value="amc">AMC</option>
+                    <option value="llce">LLCE</option>
+                    <option value="svt">SVT</option>
+                </select>
+            </label>
+
+            <label>Spé 3 
+                <select name="sub-spé3" required>
+                    <option value="">Choisissez une spécialité</option>
+                    <option value="nsi">NSI</option>
+                    <option value="maths">Mathématiques</option>
+                    <option value="ses">SES</option>
+                    <option value="physique">Physique</option>
+                    <option value="hggsp">HGGSP</option>
+                    <option value="hlp">HLP</option>
+                    <option value="amc">AMC</option>
+                    <option value="llce">LLCE</option>
+                    <option value="svt">SVT</option>
+                </select>
+            </label>
+        
+            <button type="submit">Envoyer</button>
+        </form>
+    </main>
+</body>
+</html>
+
+</body>
+</html>

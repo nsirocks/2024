@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #313638;
+    font-family: "Roboto", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+}
+
+main {
+   text-align: center;
+    width: 90%px;
+    margin: 1rem auto;
+    padding: 0 3rem;
+    background-color:lightblue;
+    border: 1px ;
+    min-height: 400px;
+    background-image : url("https://lh6.googleusercontent.com/proxy/SB91UNRO9UK-4zYTrv_TApqS-wwXK-Ts_hJYc0LA-PWI5vQB4-mv_Sh7GwKXAs8FnGvWcc54Tj4J8sP-vbrr9w9AnZBKTx204uFW89dcCQepgyQ1");
+}
+
+h1 {
+    text-align: center;
+}
+
+form > * {
+    display: block;
+    margin: 1rem;
+}
+button {
+  display: inline-block;
+  background-color: darkorange;
+  border-radius: 10px;
+  border: 4px double #cccccc;
+  color: #eeeeee;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}

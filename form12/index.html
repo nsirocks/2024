@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Titre de la page</title>
+</head>
+<body>
+<main>
+    <h1>Mon formulaire</h1>
+    <form action="https://nsi.rocks/api/cours/form" method="post">
+
+      <input type="hidden" name="api" value="nsi-2024" />
+      
+      <label>Nom 
+        <input name="sub-nom" autocomplete="name">
+      </label>
+        
+      <label>Prenom 
+          <input name="sub-prenom" autocomplete="name">
+      </label>
+
+      <label>Homme :
+      <input name="sexe" value="homme" type="radio"/>
+      Femme :
+      <input name="sexe" value="femme" type="radio"/>
+      </label>
+
+      <label>Date de naissance
+          <input name="date_naissance" type="date"  value="2000-01-01"  />
+      </label>
+
+      <label>Classe 
+          <input name="sub-classe" autocomplete="name">
+      </label>
+
+      <label>Couleur préféré
+          <input name="couleur" type="color" value="#e66465"/>
+      </label>
+
+      <label>Animal préféré
+        <select name="animal">
+          <option value="">--Choisis une option--</option>
+          <option value="chien">Chien</option>
+          <option value="chat">Chat</option>
+          <option value="hamster">Hamster</option>
+          <option value="lapin">Lapin</option>
+          <option value="araignee">Araignée</option>
+          <option value="loutre">Loutre</option>
+          <option value="serpent">Serpent</option>
+          <option value="poisson">Poisson rouge</option>
+        </select>
+      </label>
+      
+      <button type="submit">Envoyer</button>
+
+      <p></p>
+      
+    </form>
+  </main>
+</body>
+</html>

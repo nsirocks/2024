@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Lucida Console", "Courier New", monospace;
+    background-image: url("https://s1.qwant.com/thumbr/474x331/b/3/6d98d474c76a93ae6b4bc8265bf817efc883b31d897452af72983d9a73a47e/th.jpg?u=https%3A%2F%2Ftse.mm.bing.net%2Fth%3Fid%3DOIP.WDdVOaQS6AbnnInt9WZieQHaFL%26pid%3DApi&q=0&b=1&p=0&a=0")
+}
+
+main {
+    margin: 20px;
+    padding: 0 3rem;
+    background-color: rgba(255,255,255,0.65);
+    border: 5px solid rgb(60, 105, 148);
+    border-radius: 25px;
+    min-height: 400px;
+}
+
+.box {
+  margin: 25px;
+  background-color: rgba(255,255,255,0.8);
+  border: 5px solid rgba(114, 180, 226);
+  backdrop-filter: blur(2px);
+  box-shadow: 0 0 20px 2px aliceblue;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.title {
+   margin: 60px;
+   color: rgb(114, 162, 221);
+   font-size: 30px;
+   font-family: "Times New Roman", Times, serif;
+}
+
+span {
+  text-decoration: underline
+}
+
+
+form > * {
+    display: block;
+    margin: 1rem;
+}
+
+.intro {
+  font-family: New Century Schoolbook, TeX Gyre Schola, serif;
+  color: rgb(168, 97, 10);
+  font-size:17px
+}
+
+.text {
+size: 10px
+}

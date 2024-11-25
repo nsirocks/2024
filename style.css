@@ -1,0 +1,22 @@
+html {
+    font-family: monospace;
+}
+
+h1 {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    max-width: 300px;
+}
+
+li {
+    padding: 0.4rem;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}

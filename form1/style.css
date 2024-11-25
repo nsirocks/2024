@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #313638;
+    font-family: "Roboto", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+}
+
+main {
+    width: 90%px;
+    margin: 1rem auto;
+    padding: 0 3rem;
+    background-color: #E0DFD5;
+    border: 1px solid black;
+    min-height: 400px;
+}
+
+h1 {
+    text-align: center;
+}
+
+form > * {
+    display: block;
+    margin: 1rem;
+}
+
+.decoun {
+text-decoration-line: overline underline;
+text-align: center;
+
+}

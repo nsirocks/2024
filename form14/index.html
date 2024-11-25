@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Titre de la page</title>
+</head>
+<body>
+     <main>
+    <h1>Mon formulaire</h1>
+    <form action="https://nsi.rocks/api/cours/monformulaire2" method="post">
+       <label>Nom 
+        <input name="sub-nom" autocomplete="name">
+      </label>
+        
+      <label>Prenom 
+          <input name="sub-prenom" autocomplete="name">
+      </label>
+
+       <label>Classe 
+          <input name="sub-classe" autocomplete="classe">
+      </label>
+      
+      <label>Date de naissance 
+          <input name="sub-date de naissance" type="date" >
+      </label>
+
+      <label>Sexe : Homme:
+      <input name="sub-sexe" value="homme" type="radio"/>
+       Femme:
+      <input name="sub-sexe" value="femme" type="radio"/>
+      </label>
+      
+      <label>Matière préféré 
+          <input name="sub-mp" autocomplete="mp">
+      </label>
+
+      <label>Animal préféré 
+          <input name="sub-ap" autocomplete="ap">
+      </label>
+
+      <label>Couleur préférée 
+          <input name="sub-color"type="color"value="#e66465" />
+      </label>
+      
+       <label><p><i></I>Pratiques tu un sport 
+         ou une activité ? Si oui que fais tu <i/>?</p>
+          <input name="sub-sa" autocomplete="sa">
+      </label>
+      
+  <input type="hidden" name="api" value="nsi-2024"/>  
+      <button type="submit">Envoyer</button>
+    </form>
+       
+  </main>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Titre de la page</title>
+</head>
+<body>
+<main>
+
+   <form method="post" action="https://nsi.rocks/api/cours/lotterie-animal" >
+     
+  <div class="box">
+    <div class="title">Lotterie d'animal</div>
+  </div>
+
+  <div class="intro">
+    <span>Tentez votre chance de gagner une nouvelle mascotte en complétant ce formulaire:<br></span>
+  </div>
+  <br>
+
+  <input type="hidden" name="api" value="nsi-2024" />
+
+    <label>Nom 
+      <input name="nom" autocomplete="name" required>
+    </label>
+        
+    <label>Prenom 
+      <input name="prenom" autocomplete="name" required>
+    </label>
+
+    <label>Date de naissance 
+      <input name="ddn" type="date" required>
+    </label>
+
+    <div class="text">
+      <label>Avec combien de personnes habitez-vous?</label><br><br>
+      <input name="famille" type="number" min="1" required>
+    </div>
+  
+    <div>
+      Avez-vous déjà un/des animaux de compagnie?
+      <label class="container">Oui
+        <input type="radio" name="animaux" value="oui" required>
+        <span class="checkmark"></span>
+      </label>
+
+      <label class="container">Non
+        <input type="radio" name="animaux" value="non">
+        <span class="checkmark"></span>
+      </label>
+    </div>
+
+    <div id="animaux-list" style="display:none;">
+      <label>Le(s)quel(s)? 
+        <input name="animaux-details">
+      </label>
+    </div>
+
+    <br><br>      
+    <button type="submit">Envoyer</button>
+    <button type="reset">Recommencer</button>
+  </form>
+
+  <script>
+    const radioButtons = document.querySelectorAll('input[name="animaux"]');
+    const animauxList = document.getElementById('animaux-list');
+
+    radioButtons.forEach(radio => {
+      radio.addEventListener('change', () => {
+        if (radio.value === 'oui') {
+          animauxList.style.display = 'block';
+        } else {
+          animauxList.style.display = 'none';
+        }
+      });
+    });
+  </script>
+</main>
+
+
+
+</body>
+</html>

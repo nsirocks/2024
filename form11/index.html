@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Titre de la page</title>
+</head>
+<body>
+
+<main>
+    <h1>Mon formulaire</h1>
+  <img class="center" src="https://s1.qwant.com/thumbr/474x474/2/d/98350397e58a65e8df69eeecf4837d7196bb7a6e6e2eafd6ab357ac62250c3/th.jpg?u=https%3A%2F%2Ftse.mm.bing.net%2Fth%3Fid%3DOIP.wHHoGddO5LsMHm1sPC_leQHaHa%26pid%3DApi&q=0&b=1&p=0&a=0" width=100 />
+    <form action="https://nsi.rocks/api/cours/vla" method="post">
+      <fieldset>
+        <legend><strong>Informations personelles</strong></legend>
+        <label><strong>Nom</strong> 
+        <input name="sub-nom" autocomplete="name">
+        </label><br>
+      
+        <label><strong>Prenom</strong>
+          <input name="sub-prenom" autocomplete="name">
+        </label><br>
+
+        <label><strong>Date de naissance</strong>
+          <input type=date name="sub-date de naissance" autocomplete="name">
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend><strong>Goûts</strong></legend>
+        <label><strong>Sport favori</strong>
+          <input name="sub-sport" autocomplete="name">
+        </label><br>
+
+        <label><strong>Nom de ton animal de compagnie</strong>
+          <input name="sub-nom animal" autocomplete="name">
+        </label><br>
+        <label><strong>Couleur préféré</strong>
+          <input type="color" name="sub-couleur préféré" autocomplete="name">
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend><strong>Cours</strong></legend>
+        <label><strong>Matière préférée</strong> 
+        <input name="sub-matière pref" autocomplete="name">
+        </label><br>
+        <label><strong>Pire matière</strong> 
+        <input name="sub-pire matière" autocomplete="name">
+        </label><br>
+        <label><strong>Classe</strong> 
+        <input name="sub-classe" autocomplete="name">
+        </label><br>
+      </fieldset>
+  
+      <button class="bouton" type="submit">Envoyer</button>
+      <input name="api" type="hidden" value="nsi-2024">
+    </form">
+  </main>
+</body>
+</html>
