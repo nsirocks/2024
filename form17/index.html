@@ -1,26 +1,182 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Titre de la page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Formulaire</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', sans-serif;
+            background: linear-gradient(135deg, rgba(116, 235, 213, 0.7), rgba(172, 182, 229, 0.7));
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        main {
+            max-width: 600px;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            transition: transform 0.3s;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-size: 2.5em;
+            text-transform: uppercase;
+        }
+
+        label {
+            display: flex;
+            flex-direction: column;
+            margin: 15px 0 5px;
+            font-weight: 500;
+            color: #34495e;
+        }
+
+        input[type="text"],
+        select {
+            width: 100%;
+            padding: 12px;
+            margin-top: 5px;
+            border: 2px solid rgba(189, 195, 199, 0.5);
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.3s, box-shadow 0.3s;
+            background: rgba(255, 255, 255, 0.7);
+        }
+
+        input[type="text"]:focus,
+        select:focus {
+            border-color: #3498db;
+            box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+            outline: none;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        button {
+            background-color: #3498db;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s, transform 0.2s;
+            width: 100%;
+            margin-top: 15px;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+            transform: translateY(-2px);
+        }
+
+        button:active {
+            transform: translateY(0);
+        }
+
+        #sportDetails {
+            margin-top: 10px;
+            display: none;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            main {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            button {
+                padding: 10px;
+            }
+        }
+    </style>
 </head>
+
 <body>
-  <main>
-    <h1>Mon formulaire</h1>
-    <form action="https://nsi.rocks/api/cours" method="post">
-      <label>Nom 
-        <input name="sub-nom" autocomplete="name">
-      </label>
-        
-      <label>Prenom 
-          <input name="sub-prenom" autocomplete="name">
-      </label>
-  
-      <button type="submit">Envoyer</button>
-    </form>
-  </main>
+    <main>
+        <h1>Formulaire seconde</h1>
+        <form action="https://nsi.rocks/api/cours/zozo" method="post">
+          <input type="hidden" name="api" value="nsi-2024"/>
+            <label>Nom
+                <input name="nom" autocomplete="name" required>
+            </label>
+
+            <label>Prénom
+                <input name="prenom" autocomplete="given-name" required>
+            </label>
+
+            <label>Classe
+                <input name="classe" autocomplete="off" required>
+            </label>
+
+            <label>Quelle est ta matière préférée ?
+                <select name="matiere_preferée" required>
+                    <option value="">-- Choisir une matière --</option>
+                    <option value="SNT">SNT</option>
+                    <option value="SES">SES</option>
+                    <option value="Français">Français</option>
+                    <option value="Histoire">Histoire</option>
+                    <option value="Anglais">Anglais</option>
+                    <option value="Espagnol">Espagnol</option>
+                    <option value="Sport">Sport</option>
+                    <option value="SVT">SVT</option>
+                    <option value="Maths">Maths</option>
+                    <option value="Physique">Physique-chimie</option>
+                </select>
+            </label>
+
+            <label>
+                Souhaites-tu prendre cette matière comme spécialité ?
+                <input type="checkbox" name="specialite" value="oui"> Oui
+              <input type="checkbox" name="specialite" value="non"> Non
+            </label>
+
+            <label>Que voudrais-tu faire plus tard ?
+                <input name="futur" autocomplete="off" required>
+            </label>
+
+            <label>
+                Fais-tu du sport en dehors du lycée ?
+                <input type="checkbox" name="sport" id="sportOui" value="oui" onclick="toggleSportInput()"> Oui
+                <input type="checkbox" name="sport" id="sportNon" value="non" onclick="toggleSportInput()"> Non
+            </label>
+
+            <div id="sportDetails">
+                <label>Quel sport pratiques-tu ?
+                    <input name="quel_sport" autocomplete="off">
+                </label>
+            </div>
+
+            <button type="submit">Envoyer</button>
+        </form>
+
+        <script>
+            function toggleSportInput() {
+                sportDetails.style.display = sportOui.checked ? 'block' : 'none';
+            }
+        </script>
+    </main>
+
 </body>
+
 </html>
